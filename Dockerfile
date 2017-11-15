@@ -7,4 +7,4 @@ WORKDIR /src/binproxy/
 
 RUN bundle
 
-ENTRYPOINT [ "binproxy" ]
+ENTRYPOINT [ "binproxy", "--http-host", "0.0.0.0" ]
